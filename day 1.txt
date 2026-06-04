@@ -1,0 +1,31 @@
+**Descriptive Analysis**
+Question: How many patients registered in the Emergency Department last month?
+Data needed:
+Patients ID
+Registration date
+Department name
+Patient visit records
+
+What was the average waiting time for patients in the Emergency Department?
+Patient ID
+Arrival time
+Consultation start time
+Department records
+
+
+**Predective Analysis**
+Question: Can we predict how many patients will register in emergency department next week?
+Data needed:
+Previous months patient registration data
+Seasonal trends
+Daily patient count
+Holiday or weekend data
+Emergency case records
+
+Can we predict which patients may require hospital admission after emergency treatment?
+Data needed:
+Patient symptoms
+Vital signs
+Diagnosis records
+Age and medical history
+Admission status

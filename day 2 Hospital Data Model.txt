@@ -1,0 +1,44 @@
+Hospital Data Model
+1. Patient Table
+
+|Column Name      | Key Type    |
+| --------------- | ----------- |
+| patient_id      | Primary Key |
+| patient_name    |             |
+| age             |             |
+| address         |             |
+| phone_number    | Unique Key  |
+| blood_group     |             |
+| health_problem  |             |
+| next_visit_date |             |
+| doctor_id       | Foreign Key |
+| doctor_name     |             |
+
+2.Appointment Table
+
+| Column Name      | Key Type    |
+| ---------------- | ----------- |
+| appointment_id   | Primary Key |
+| patient_id       | Foreign Key |
+| appointment_date |             |
+| doctor_id        | Foreign Key |
+| doctor_name      |             |
+| appointment_time |             |
+| doctor_fees      |             |
+
+3.Biling Table
+
+| Column Name  | Key Type    |
+| ------------ | ----------- |
+| bill_id      | Primary Key |
+| patient_id   | Foreign Key |
+| pharmacy_id  | Foreign Key |
+| total_amount |             |
+| payment_mode |             |
+
+
+Relationships
+Patient → Appointment = One to Many
+Patient → Pharmacy = One to Many
+Patient → Billing = One to One
+Pharmacy → Billing = One to One
